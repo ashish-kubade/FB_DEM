@@ -1,0 +1,160 @@
+SRFBN(
+  (conv_in): Sequential(
+    (0): Conv2d(1, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): PReLU(num_parameters=1)
+  )
+  (feat_in): Sequential(
+    (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): PReLU(num_parameters=1)
+  )
+  (block): FeedbackBlock(
+    (compress_in): Sequential(
+      (0): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): PReLU(num_parameters=1)
+    )
+    (upBlocks): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (1): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (2): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (3): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (4): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (5): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (6): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (7): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+    )
+    (downBlocks): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (1): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (2): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (3): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (4): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (5): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (6): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (7): Sequential(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+    )
+    (uptranBlocks): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (1): Sequential(
+        (0): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (2): Sequential(
+        (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (3): Sequential(
+        (0): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (4): Sequential(
+        (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (5): Sequential(
+        (0): Conv2d(448, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (6): Sequential(
+        (0): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+    )
+    (downtranBlocks): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (1): Sequential(
+        (0): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (2): Sequential(
+        (0): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (3): Sequential(
+        (0): Conv2d(320, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (4): Sequential(
+        (0): Conv2d(384, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (5): Sequential(
+        (0): Conv2d(448, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+      (6): Sequential(
+        (0): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1))
+        (1): PReLU(num_parameters=1)
+      )
+    )
+    (compress_out): Sequential(
+      (0): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): PReLU(num_parameters=1)
+    )
+  )
+  (out): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): PReLU(num_parameters=1)
+  )
+  (conv_out): Sequential(
+    (0): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+  (interpolate_conv): Sequential(
+    (0): Conv2d(1, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): PReLU(num_parameters=1)
+  )
+)
+Network structure: [DataParallel - SRFBN], with parameters: [976,111]
